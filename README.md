@@ -262,6 +262,12 @@ Yes, I can improve performance by implementing lazy loading, React.memo, debounc
 
 5. **Explain the box model in CSS.**
    - Expected Answer: Content → Padding → Border → Margin. Important for calculating element widths/heights and spacing in your restaurant cards and cart layout.
+   - box model ----  it is the fundamental concept in web developement.
+   - it contains  the content -- padding --- border--- margin
+   - content  is the actual  coontent of the box(text,  image, etc)
+   -  padding is  creates  space around the content(element)
+   -  border is  applied to the surrounding  padding and content.
+   -   margin  is clears the space outside the border. 
 
 6. **What is the difference between Flexbox and CSS Grid, and where did you use each in SWIGGY?**
    - Expected Answer: 
