@@ -513,7 +513,7 @@ Q: Difference in one line?
         }
       }
       ```
-
+“Debouncing delays the execution of a function until the user stops triggering the event, commonly used in search inputs. Throttling limits how often a function can run within a time interval, used in scroll or resize events. Both techniques improve performance and reduce unnecessary operations.”
 ### Advanced Architecture
 29. **Explain the MVC (Model-View-Controller) pattern. How would you refactor SWIGGY using it?**
     - Expected Answer:
