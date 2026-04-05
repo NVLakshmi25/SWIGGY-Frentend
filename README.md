@@ -478,12 +478,37 @@ Because:
 28. **What is debouncing and throttling? Where would you apply them in SWIGGY?**
     - Expected Answer:
       - Debouncing: Wait until user stops typing (search)
-      - Throttling: Limit function calls per time interval (scroll events)
+      - Debouncing is a technique where a function is executed only after a certain delay once the user stops triggering the event.
+👉 It waits for silence.
+🧠 Use Case
+
+✔ Search input
+✔ Auto-suggestions
+✔ Form validation
+      - Throttling: Limit function calls per time interval (scroll events).
+      Throttling ensures a function is executed at most once in a given time interval, even if the event happens many times.
+👉 It limits frequency.
+🧠 Use Case
+
+✔ Scroll events
+✔ Window resize
+✔ Button click prevention.
+Q: Difference in one line?
+
+👉 Debounce = delay execution
+👉 Throttle = limit execution rate
+
+🧠 Memory Tips
+
+👉 Debounce = “wait and run”
+👉 Throttle = “run but limit”
+
       ```javascript
       function debounce(func, delay) {
         let timeoutId;
         return function(...args) {
-          clearTimeout(timeoutId);
+          clearTimeout(timeoutId);  // 👉 Cancels previous call if user types again.
+          👉 Waits for delay → then executes function
           timeoutId = setTimeout(() => func(...args), delay);
         }
       }
