@@ -359,6 +359,11 @@ Yes, I can improve performance by implementing lazy loading, React.memo, debounc
         }
       });
       ```
+- Add one listener to a parent and use `event.target` to detect which child was interacted with. Works because events bubble.
+
+Why use it?
+- Better performance (fewer listeners).
+- Works with dynamic children added later.
 
 16. **What is the difference between synchronous and asynchronous JavaScript?**
     - Expected Answer:
