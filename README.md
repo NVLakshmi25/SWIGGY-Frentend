@@ -376,6 +376,10 @@ Why use it?
       ```javascript
       // Problem
       button.addEventListener('click', this.addToCart); // loses context
+      🧠 Why this happens?
+Because:
+👉 Function is called independently, not as obj.method() 
+👉 So JavaScript cannot know original object
       // Solution
       button.addEventListener('click', () => this.addToCart()); // arrow function
       ```
