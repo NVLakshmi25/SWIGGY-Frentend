@@ -367,8 +367,8 @@ Why use it?
 
 16. **What is the difference between synchronous and asynchronous JavaScript?**
     - Expected Answer:
-      - Synchronous: Blocks execution until complete (loops, calculations)
-      - Asynchronous: Non-blocking (API calls, timeouts, file operations)
+      - Synchronous: execute the block of code util its  complete  (loops, calculations)
+      - Asynchronous:Asynchronous  code is  Non-blocking, it  execute  after some specific delay  (API calls, timeouts, file operations)
       - SWIGGY uses async for restaurant data fetching
 
 17. **Explain the `this` keyword in JavaScript. When does it cause issues?**
