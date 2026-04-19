@@ -2319,6 +2319,8 @@ const module = await import('./module');
 
 // 6. Remove unused dependencies
 // npm list && npm prune
+
+"I optimize bundle size by using code splitting with React.lazy and Suspense, removing unused libraries,Remove unused dependencies, leveraging tree shaking, optimizing images, and using dynamic imports. I also analyze bundle size using tools like source-map-explorer to identify heavy dependencies."
 ```
 
 #### Q54. How would you implement server-side rendering (SSR) for Swiggy?
